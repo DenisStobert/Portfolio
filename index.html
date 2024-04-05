@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Stobert - Front-End Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+
+    <div class="loading-page">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path 
+                d="M415.4 512h-95.1L212.1 357.5v91.1L125.7 512H28V29.8L68.5 0h108.1l123.7 176.1V63.5L386.7 0h97.7v461.5zM38.8 35.3V496l72-52.9V194l215.5 307.6h84.8l52.4-38.2h-78.3L69 13zm82.5 466.6l80-58.8v-101l-79.8-114.4v220.9L49 501.9h72.3zM80.6 10.8l310.6 442.6h82.4V10.8h-79.8v317.6L170.9 10.8zM311 191.7l72 102.8V15.9l-72 53v122.7z"/>
+            </svg>
+
+            <div class="name-container">
+                <div class="logo-name">pfolio</div>
+            </div>
+
+    </div>
+    <div id="shooting-stars">
+        <div class="window-area">
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+        </div>
+        <div class="centered-text">
+            <h2>Hello, my name is</h2><h1 data-value="DENIS STOBERT">DENIS STOBERT</h1>
+            <p>I'm a <span class="text-main">Front-End Developer</span>.</p>
+            <a href="#about" class="view-work-btn">View My Work <i class="fas fa-arrow-right arrow"></i></a>
+            <div class="social-icons">
+                <a href="https://github.com/DenisStobert" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:den.stobert1@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/denis.stobert/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="DenisStobertResume.pdf" target="_blank" download="Denis_Stobert_CV.pdf" title="Download CV"><i class="fas fa-file-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <header id="main-header">
+        <nav>
+            <ul>
+                <li><a href="#shooting-stars">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="dark-mode-toggle">
+            <i class="bx bx-moon" id="darkMode-icon"></i>
+            <i class="bx bx-sun" id="lightMode-icon" style="display: none;"></i>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="background"></div>
+        <div class="about-container">
+            <div class="about-contents">
+
+                <section class="imageSection" data-aos="flip-right" data-aos-duration="1000">
+                    <img src="me.png" alt="">
+                </section>
+
+                <section class="infoSection" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="infoHeader">
+                        <h1 data-aos="fade-left" data-aos-duration="1000">About Me</h1>
+                        <h2>Professional Front-End Developer</h2>
+                    </div>
+                    <div class="personalInfo">
+                        <div><span style="font-weight: bold;">Name:</span><span>Denis Stobert</span></div>
+                        <div><span style="font-weight: bold;">Location:</span><span>Atlanta, GA</span></div>
+                    </div>
+                    <p data-aos="fade-right" data-aos-duration="1000">Hello! I'm Denis Stobert, a Front-End Developer based in Atlanta. With 2 years of hands-on experience, I've had the opportunity to work on a wide range of personal and professional projects, each challenging and rewarding in its own way.
+                    </p>
+                    <p data-aos="fade-left" data-aos-duration="2000">I'm deeply passionate about creating visually appealing and user-friendly interfaces, and I continuously strive to enhance my skills and knowledge in the ever-evolving world of web development. My journey so far has been a blend of creativity, ambition, and a relentless pursuit of excellence.</p>
+                    <p class="bot-line" data-aos="fade-right" data-aos-duration="3000">Whether it's a small personal project or a large-scale professional endeavor, I approach each task with the same level of enthusiasm and dedication. I believe in the power of collaboration and always look forward to working with teams that share my passion for innovation and design.
+                    </p>
+                    <a href="DenisStobertResume.pdf" target="_blank" download="Denis_Stobert_CV.pdf" title="Download CV" data-aos="fade-up" data-aos-duration="1000">Download CV</a>
+                </section>
+
+                <section class="skillSection" data-aos="zoom-in" data-aos-duration="1000">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <div class="subject">Javascript</div>
+                    <div class="progress-bar">
+                        <div class="progress-line" value="94%" style="max-width: 94%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="subject">HTML</div>
+                    <div class="progress-bar">
+                        <div class="progress-line" value="100%" style="max-width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="subject">React.js</div>
+                    <div class="progress-bar">
+                        <div class="progress-line" value="96%" style="max-width: 96%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="subject">CSS</div>
+                    <div class="progress-bar">
+                        <div class="progress-line" value="100%" style="max-width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="subject">Bootstrap</div>
+                    <div class="progress-bar">
+                        <div class="progress-line" value="97%" style="max-width: 97%;"></div>
+                    </div>
+                </div>
+                <div class="skill-container" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="card">
+                        <div class="percent" style="--clr:#787cb5; --num:95;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>95<span>%</span></h3>
+                                <p>Photoshop</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="percent" style="--clr:var(--main-color); --num:90;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>90<span>%</span></h3>
+                                <p>Illustrator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-container" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="card">
+                        <div class="percent" style="--clr:var(--main-color); --num:97;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>97<span>%</span></h3>
+                                <p>Premiere</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="percent" style="--clr:#787cb5; --num:93;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>93<span>%</span></h3>
+                                <p>CorelDRAW</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="text-header">PORTFOLIO</h2>
+        <div class="portfolio-item">
+            <div class="device-mockup laptop-mockup" data-aos="fade-up-right" data-aos-duration="1000">
+                <div class="slider">
+                    <div class="list">
+                        <div class="item">
+                            <video src="chococharm.mp4" muted autoplay loop></video>
+                        </div>
+                        <div class="item">
+                            <img src="screen1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+                
+                <div class="device-mockup phone-mockup" data-aos="zoom-in-left" data-aos-duration="1000">
+                    <div class="slider phone-slider">
+                        <div class="list phone-list">
+                            <div class="item">
+                                <video src="chococharm-phone.mp4" muted autoplay loop></video>
+                            </div>
+                            <div class="item">
+                                <img src="screen-phone2.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="screen-phone3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="screen-phone4.png" alt="">
+                            </div>
+                        </div>
+                        <ul class="dots phone-dots">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                </div>
+            </div>
+            
+            
+            <div class="project-info" data-aos="fade-up-left" data-aos-duration="1000">
+                <div class="content">
+                    <h1>ChocoCharm</h1>
+                    <p>Description of the project goes here. Explain what the project is about and any other relevant information.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="project-info" data-aos="fade-up-left" data-aos-duration="1000">
+                <div class="content">
+                    <h1>Project Title</h1>
+                    <p>Description of the project goes here. Explain what the project is about and any other relevant information.</p>
+                </div>
+            </div>
+            <div class="device-mockup laptop-mockup" data-aos="fade-up-right" data-aos-duration="1000">
+                <div class="slider">
+                    <div class="list">
+                        <div class="item">
+                            <video src="chococharm.mp4" muted autoplay loop></video>
+                        </div>
+                        <div class="item">
+                            <img src="screen1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="device-mockup phone-mockup" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="slider phone-slider">
+                    <div class="list phone-list">
+                        <div class="item">
+                            <video src="chococharm-phone.mp4" muted autoplay loop></video>
+                        </div>
+                        <div class="item">
+                            <img src="screen-phone2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen-phone3.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen-phone4.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="dots phone-dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="device-mockup laptop-mockup" data-aos="fade-up-right" data-aos-duration="1000">
+                <div class="slider">
+                    <div class="list">
+                        <div class="item">
+                            <video src="chococharm.mp4" muted autoplay loop></video>
+                        </div>
+                        <div class="item">
+                            <img src="screen1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="device-mockup phone-mockup" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="slider phone-slider">
+                    <div class="list phone-list">
+                        <div class="item">
+                            <video src="chococharm-phone.mp4" muted autoplay loop></video>
+                        </div>
+                        <div class="item">
+                            <img src="screen-phone2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen-phone3.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="screen-phone4.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="dots phone-dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="project-info" data-aos="fade-up-left" data-aos-duration="1000">
+                <div class="content">
+                    <h1>Project Title</h1>
+                    <p>Description of the project goes here. Explain what the project is about and any other relevant information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="contact">
+
+        <div class="container">
+            <div class="left">
+                <div class="form-wrapper">
+                    <div class="contact-heading">
+                        <h1>Let's work together<span>.</span></h1>
+                        <p class="text">Or reach me via : <a href="mailto:den.stobert1@gmail.com">den.stobert1@gmail.com</a></p>
+                    </div>
+                    <form action="index.html" method="post" class="contact-form">
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="First Name" type="text" required>
+                            <label>First Name</label>
+                            <i class="icon fa-solid fa-address-card"></i>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>
+                            <label>Last Name</label>
+                            <i class="icon fa-solid fa-address-card"></i>
+                        </div>
+
+                        <div class="input-wrap w-100">
+                            <input class="contact-input" autocomplete="off" name="Email" type="email" required>
+                            <label>Email</label>
+                            <i class="icon fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="input-wrap textarea w-100">
+                            <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
+                            <label>Message</label>
+                            <i class="icon fa-solid fa-inbox"></i>
+                        </div>
+
+                        <div class="contact-buttons w-100">
+                            <button class="btn upload">
+                                <span>
+                                    <i class="fa-solid fa-paperclip"></i> Add attachment
+                                </span>
+                                <input type="file" name="attachment">
+                            </button>
+                            <input type="submit" value="Send message" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image-wrapper">
+                    <img src="img.jpeg" class="img">
+                    <div class="wave-wrap">
+                        <svg class="wave" viewBox="0 0 783 1536" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="wave" d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1 1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z"/>
+                        </svg>
+                        <svg class="dashed-wave" viewBox="0 0 345 877" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="dashed-wave" d="M0.5 876C25.6667 836.167 73.2 739.8 62 673C48 589.5 35.5 499.5 125.5 462C215.5 424.5 150 365 87 333.5C24 302 44 237.5 125.5 213.5C207 189.5 307 138.5 246 87C185 35.5 297 1 344.5 1"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 <span>Denis Stobert</span></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./javascript.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
