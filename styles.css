@@ -104,7 +104,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("bg.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/bg.jpeg");
     background-position-x: center;
     background-size: cover;
 }
@@ -861,37 +861,37 @@ section {
     transform: translateY(0) !important;
 }
 .portfolio .card[for="c1"]{
-    background-image: url(chococharm.png);
+    background-image: url(img/chococharm.png);
 }
 .portfolio .card[for="c2"]{
-    background-image: url(chococharm2.png);
+    background-image: url(img/chococharm2.png);
 }
 .portfolio .card[for="c3"]{
-    background-image: url(chococharm3.png);
+    background-image: url(img/chococharm3.png);
 }
 .portfolio .card[for="c4"]{
-    background-image: url(website1.png);
+    background-image: url(img/website1.png);
 }
 .portfolio .card[for="c5"]{
-    background-image: url(website2.png);
+    background-image: url(img/website2.png);
 }
 .portfolio .card[for="c6"]{
-    background-image: url(website3.png);
+    background-image: url(img/website3.png);
 }
 .portfolio .card[for="c7"]{
-    background-image: url(boxers1.png);
+    background-image: url(img/boxers1.png);
 }
 .portfolio .card[for="c8"]{
-    background-image: url(boxers2.png);
+    background-image: url(img/boxers2.png);
 }
 .portfolio .card[for="c9"]{
-    background-image: url(boxers3.png);
+    background-image: url(img/boxers3.png);
 }
 .portfolio .card[for="c11"]{
-    background-image: url(future2.png);
+    background-image: url(img/future2.png);
 }
 .portfolio .card[for="c12"]{
-    background-image: url(future3.png);
+    background-image: url(img/future3.png);
 }
 .nav-buttons {
     display: flex;
