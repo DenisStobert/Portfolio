@@ -738,324 +738,160 @@ section {
 #portfolio {
     padding: 50px 0;
     text-align: center;
+    height: 100vh;
 }
-
-.portfolio-item {
-    display: flex;
+.portfolio .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 40px; /* Adjust the gap between card-sets as needed */
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 30px;
+    padding: 20px; /* Add padding around the entire wrapper */
+}
+.portfolio .card-set {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.portfolio .container{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.portfolio .card{
+    width: 70px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 5px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,0.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    position: relative;
+    filter: blur(1px);
+}
+.portfolio .description h4,
+.portfolio .description p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.device-mockup {
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.portfolio .card:hover .description h4,
+.portfolio .card:hover .description p {
+    opacity: 1;
 }
-.laptop-mockup {
-    background-image: url('laptop.png');
-    width: 600px; /* Adjust based on your image size */
-    height: 400px; /* Adjust based on your image size */
-    position: relative; /* Add this line */
-    z-index: 1; /* Add this line */
+.portfolio .card > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
 }
-.slider{
-    width: 447px;
-    height: 295px;
-    margin: auto;
-    position: relative;
+.portfolio .card > .row > .icon{
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 14px;
+    transition: .3s;
+}
+.portfolio .card > .row > .icon:hover{
+    background-color: var(--main-color);
+}
+.portfolio .card > .row > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
 }
-.list{
-    overflow-y: hidden;
+.portfolio .card::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    transition: 1s;
-}
-.list {
-    scroll-snap-type: y mandatory;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    transition: background 0.3s ease;
 }
 
-.list .item {
-    scroll-snap-align: start;
+.portfolio .card:hover::before {
+    background: rgba(0, 0, 0, 0.5);
 }
-.list img{
-    width: 447px;
-    height: 290px;
-    object-fit: cover;
-    overflow: hidden;
+.portfolio .description p{
+    padding-top: 5px;
+    color: #b0b0ba;
 }
-.list video{
-    width: 447px;
-    height: 290px;
-    object-fit: cover;
-    overflow: hidden;
+.portfolio .description h4{
+    text-transform: uppercase;
 }
-.dots{
+.portfolio input{
+    display: none;
+}
+.portfolio input:checked + label{
+    width: 600px;
+    filter: blur(0px);
+    cursor: default;
+}
+.card .slide-video {
     position: absolute;
-    bottom: 10px;
-    color: #fff;
+    top: 0;
     left: 0;
     width: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-.dots li{
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: var(--main-color);
-    margin: 20px;
-    border-radius: 20px;
-    transition: .5s;
-    cursor: pointer;
-}
-.dots li.active{
-    width: 30px;
-    box-shadow: 0 0 0 3px rgba(230, 55, 84, 0.5); /* Adjust the color and size as needed */
-    border: 2px solid var(--main-color);
-}
-.buttons{
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 6;
-}
-.buttons button {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-    font-size: 15px; /* Adjust font size as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.buttons button:hover {
-    background-color: var(--main-color);
-    color: #fff;
-    transform: scale(1.1); /* Slightly enlarge on hover */
-}
-.phone-mockup {
-    background-image: url('phone.png');
-    width: 200px; /* Adjust based on your image size */
-    height: 300px; /* Adjust based on your image size */
-    margin-left: -400px; /* Adjust this value to overlap the laptop */
-    margin-top: 150px;
-    position: relative; /* Add this line */
-    z-index: 2; /* Add this line */
-    overflow: hidden;
-}
-.laptop-screen {
-    position: absolute;
-    top: 2.5%; /* Adjust based on your mockup */
-    left: 12.8%; /* Adjust based on your mockup */
-    right: 10%; /* Adjust based on your mockup */
-    bottom: 10%; /* Adjust based on your mockup */
-    overflow: hidden;
-    scroll-behavior: smooth;
-    display: flex;
-    width: 447px; /* Adjust based on your mockup */
-    height: 295px; /* Adjust based on your mockup */
-    border-radius: 5px;
-    transition: .5s ease-in-out;
-    overflow-y: hidden;
-}
-.laptop-screen img{
-    scroll-snap-align: start;
-    object-fit: cover;
-    flex: 1 0 100%;
-    width: 447px;
-    height: 290px;
-}
-.slide video{
-    scroll-snap-align: start;
-    object-fit: cover;
-    flex: 1 0 100%;
-    width: 447px;
-    height: 290px;
-}
-.phone-screen {
-    position: absolute;
-    top: 10%; /* Adjust based on your mockup */
-    left: 32%; /* Adjust based on your mockup */
-    right: 10%; /* Adjust based on your mockup */
-    bottom: 10%; /* Adjust based on your mockup */
-    overflow: hidden;
-    width: 150px; /* Adjust based on your mockup */
-    height: 320px; /* Adjust based on your mockup */
-    border-radius: 20px;
-    transition: .5s ease-in-out;
-}
-.phone-slider{
-    width: 133px;
-    height: 290px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 5px;
-    border-radius: 15px;
-}
-
-.phone-list img{
-    width: 150px;
-    height: 325px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 20px;
-}
-.phone-list video{
-    width: 150px;
-    height: 325px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.phone-buttons {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 6;
-}
-
-.phone-buttons button {
-    width: 30px; /* Adjust based on your preference */
-    height: 30px; /* Adjust based on your preference */
-    border-radius: 50%;
-    background-color: transparent;
-    color: var(--main-color);
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-    z-index: 5;
-    border: 2px solid var(--main-color);
-}
-
-.phone-buttons button:hover {
-    background-color: var(--main-color);
-    cursor: pointer;
-    color: var(--white-color);
-    border-color: transparent;
-}
-
-.phone-dots {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.phone-dots li {
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: var(--main-color);
-    margin: 10px;
-    border-radius: 20px;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.phone-dots li.active {
-    width: 20px;
-    box-shadow: 0 0 0 2px rgba(230, 55, 84, 0.5); /* Adjust the color and size as needed */
-    border: 1px solid var(--main-color);
-}
-
-.phone-screen img{
-    width: 150px;
-    height: 320px;
-}
-.screen video {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out; /* Add transition for transform */
+    object-fit: cover; /* Ensure the video covers the entire card */
+    z-index: -1; /* Place the video behind other elements */
 }
-
-.slide-left-out {
-    transform: translateX(-100%); /* Slide out to the left */
+.portfolio input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
-
-.slide-right-out {
-    transform: translateX(100%); /* Slide out to the right */
+.portfolio .card[for="c1"]{
+    background-image: url(chococharm.png);
 }
-
-.slide-left-in {
-    transform: translateX(100%); /* Start from the right */
+.portfolio .card[for="c2"]{
+    background-image: url(chococharm2.png);
 }
-
-.slide-right-in {
-    transform: translateX(-100%); /* Start from the left */
+.portfolio .card[for="c3"]{
+    background-image: url(chococharm3.png);
 }
-.content {
-    width: 550px;
-    height: 400px;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg-color);
-    padding: 20px;
-    box-sizing: border-box;
+.portfolio .card[for="c4"]{
+    background-image: url(website1.png);
 }
-.content:before{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: #fff;
-    z-index: -1;
+.portfolio .card[for="c5"]{
+    background-image: url(website2.png);
 }
-.content:after{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: #fff;
-    z-index: -2;
-    filter: blur(40px);
+.portfolio .card[for="c6"]{
+    background-image: url(website3.png);
 }
-.content:before,
-.content:after{
-    background: linear-gradient(235deg, rgb(230, 55, 84), #fff, #04c2c9);
+.portfolio .card[for="c7"]{
+    background-image: url(boxers1.png);
 }
-.content:hover:before,
-.content:hover:after {
-    background: linear-gradient(-235deg, rgb(230, 55, 84), #fff, #04c2c9);
+.portfolio .card[for="c8"]{
+    background-image: url(boxers2.png);
 }
-.project-info h1 {
-    margin-bottom: 10px;
+.portfolio .card[for="c9"]{
+    background-image: url(boxers3.png);
 }
-.project-info p{
-    font-size: 30px;
-    justify-content: center;
+.portfolio .card[for="c11"]{
+    background-image: url(future2.png);
+}
+.portfolio .card[for="c12"]{
+    background-image: url(future3.png);
 }
 .nav-buttons {
     display: flex;

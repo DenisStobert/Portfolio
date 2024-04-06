@@ -100,6 +100,19 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+document.querySelectorAll('.portfolio-item').forEach(item => {
+    let currentSlide = 0;
+    const slides = item.querySelectorAll('.slide');
+    const slidesContainer = item.querySelector('.slides-container');
+    const totalSlides = slides.length;
+
+    function nextSlide() {
+        slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        currentSlide = (currentSlide + 1) % totalSlides;
+    }
+
+    setInterval(nextSlide, 3000);
+});
 function createShootingStar() {
     const shootingStar = document.createElement('div');
     shootingStar.classList.add('shooting-star');
