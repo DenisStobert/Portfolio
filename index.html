@@ -11,21 +11,19 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-
 </head>
 <body>
-
+    <!-- Loading Page -->
     <div class="loading-page">
         <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path 
-                d="M415.4 512h-95.1L212.1 357.5v91.1L125.7 512H28V29.8L68.5 0h108.1l123.7 176.1V63.5L386.7 0h97.7v461.5zM38.8 35.3V496l72-52.9V194l215.5 307.6h84.8l52.4-38.2h-78.3L69 13zm82.5 466.6l80-58.8v-101l-79.8-114.4v220.9L49 501.9h72.3zM80.6 10.8l310.6 442.6h82.4V10.8h-79.8v317.6L170.9 10.8zM311 191.7l72 102.8V15.9l-72 53v122.7z"/>
-            </svg>
-
-            <div class="name-container">
-                <div class="logo-name">pfolio</div>
-            </div>
-
+            <path d="M415.4 512h-95.1L212.1 357.5v91.1L125.7 512H28V29.8L68.5 0h108.1l123.7 176.1V63.5L386.7 0h97.7v461.5zM38.8 35.3V496l72-52.9V194l215.5 307.6h84.8l52.4-38.2h-78.3L69 13zm82.5 466.6l80-58.8v-101l-79.8-114.4v220.9L49 501.9h72.3zM80.6 10.8l310.6 442.6h82.4V10.8h-79.8v317.6L170.9 10.8zM311 191.7l72 102.8V15.9l-72 53v122.7z"/>
+        </svg>
+        <div class="name-container">
+            <div class="logo-name">pfolio</div>
+        </div>
     </div>
+
+    <!-- Home Section -->
     <div id="shooting-stars">
         <div class="window-area">
             <span class="stars"></span>
@@ -40,7 +38,8 @@
             <span class="stars"></span>
         </div>
         <div class="centered-text">
-            <h2>Hello, my name is</h2><h1 data-value="DENIS STOBERT">DENIS STOBERT</h1>
+            <h2>Hello, my name is</h2>
+            <h1 data-value="DENIS STOBERT">DENIS STOBERT</h1>
             <p>I'm a <span class="text-main">Front-End Developer</span>.</p>
             <a href="#about" class="view-work-btn">View My Work <i class="fas fa-arrow-right arrow"></i></a>
             <div class="social-icons">
@@ -51,6 +50,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Header -->
     <header id="main-header">
         <nav>
             <ul>
@@ -66,15 +67,14 @@
         </div>
     </header>
 
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="background"></div>
         <div class="about-container">
             <div class="about-contents">
-
                 <section class="imageSection" data-aos="flip-right" data-aos-duration="1000">
                     <img src="img/me.png" alt="">
                 </section>
-
                 <section class="infoSection" data-aos="fade-down" data-aos-duration="1000">
                     <div class="infoHeader">
                         <h1 data-aos="fade-left" data-aos-duration="1000">About Me</h1>
@@ -84,139 +84,161 @@
                         <div><span style="font-weight: bold;">Name:</span><span>Denis Stobert</span></div>
                         <div><span style="font-weight: bold;">Location:</span><span>Atlanta, GA</span></div>
                     </div>
-                    <p data-aos="fade-right" data-aos-duration="1000">Hello! I'm Denis Stobert, a Front-End Developer based in Atlanta. With 2 years of hands-on experience, I've had the opportunity to work on a wide range of personal and professional projects, each challenging and rewarding in its own way.
-                    </p>
+                    <p data-aos="fade-right" data-aos-duration="1000">Hello! I'm Denis Stobert, a Front-End Developer based in Atlanta. With 2 years of hands-on experience, I've had the opportunity to work on a wide range of personal and professional projects, each challenging and rewarding in its own way.</p>
                     <p data-aos="fade-left" data-aos-duration="2000">I'm deeply passionate about creating visually appealing and user-friendly interfaces, and I continuously strive to enhance my skills and knowledge in the ever-evolving world of web development. My journey so far has been a blend of creativity, ambition, and a relentless pursuit of excellence.</p>
-                    <p class="bot-line" data-aos="fade-right" data-aos-duration="3000">Whether it's a small personal project or a large-scale professional endeavor, I approach each task with the same level of enthusiasm and dedication. I believe in the power of collaboration and always look forward to working with teams that share my passion for innovation and design.
-                    </p>
+                    <p class="bot-line" data-aos="fade-right" data-aos-duration="3000">Whether it's a small personal project or a large-scale professional endeavor, I approach each task with the same level of enthusiasm and dedication. I believe in the power of collaboration and always look forward to working with teams that share my passion for innovation and design.</p>
+                    <div class="skill-icons">
+                        <i class="fa-brands fa-html5" style="color: #e34c26;"></i>
+                        <i class="fa-brands fa-css3-alt" style="color: #264de4;"></i>
+                        <i class="fa-brands fa-js" style="color: #F0DB4F;"></i>
+                        <i class="fa-brands fa-react" style="color: #61dbfb;"></i>
+                        <i class="fa-brands fa-bootstrap" style="color: #563d7c;"></i>
+                        <i class="fa-brands fa-unity"></i>
+                        <div class="show-more">Show More</div>
+                    </div>
                     <a href="DenisStobertResume.pdf" target="_blank" download="Denis_Stobert_CV.pdf" title="Download CV" data-aos="fade-up" data-aos-duration="1000">Download CV</a>
                 </section>
-
                 <section class="skillSection" data-aos="zoom-in" data-aos-duration="1000">
-                <h2>Skills</h2>
-                <div class="skill">
-                    <div class="subject">Javascript</div>
-                    <div class="progress-bar">
-                        <div class="progress-line" value="94%" style="max-width: 94%;"></div>
+                    <h2>Skills</h2>
+                    <div class="skill">
+                        <div class="subject">Javascript</div>
+                        <div class="progress-bar">
+                            <div class="progress-line" value="94%" style="max-width: 94%;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="subject">HTML</div>
-                    <div class="progress-bar">
-                        <div class="progress-line" value="100%" style="max-width: 100%;"></div>
+                    <div class="skill">
+                        <div class="subject">HTML</div>
+                        <div class="progress-bar">
+                            <div class="progress-line" value="100%" style="max-width: 100%;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="subject">React.js</div>
-                    <div class="progress-bar">
-                        <div class="progress-line" value="96%" style="max-width: 96%;"></div>
+                    <div class="skill">
+                        <div class="subject">React.js</div>
+                        <div class="progress-bar">
+                            <div class="progress-line" value="96%" style="max-width: 96%;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="subject">CSS</div>
-                    <div class="progress-bar">
-                        <div class="progress-line" value="100%" style="max-width: 100%;"></div>
+                    <div class="skill">
+                        <div class="subject">CSS</div>
+                        <div class="progress-bar">
+                            <div class="progress-line" value="100%" style="max-width: 100%;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="subject">Bootstrap</div>
-                    <div class="progress-bar">
-                        <div class="progress-line" value="97%" style="max-width: 97%;"></div>
+                    <div class="skill">
+                        <div class="subject">Bootstrap</div>
+                        <div class="progress-bar">
+                            <div class="progress-line" value="97%" style="max-width: 97%;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-container" data-aos="fade-up-right" data-aos-duration="1000">
-                    <div class="card">
-                        <div class="percent" style="--clr:#787cb5; --num:95;">
-                            <div class="dot"></div>
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
-                            </svg>
-                            <div class="number">
-                                <h3>95<span>%</span></h3>
-                                <p>Photoshop</p>
+                    <div class="skill-container" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="card">
+                            <div class="percent" style="--clr:#787cb5; --num:95;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h3>95<span>%</span></h3>
+                                    <p>Photoshop</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="percent" style="--clr:var(--main-color); --num:90;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h3>90<span>%</span></h3>
+                                    <p>Illustrator</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="percent" style="--clr:var(--main-color); --num:90;">
-                            <div class="dot"></div>
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
-                            </svg>
-                            <div class="number">
-                                <h3>90<span>%</span></h3>
-                                <p>Illustrator</p>
+                    <div class="skill-container" data-aos="fade-up-left" data-aos-duration="1000">
+                        <div class="card">
+                            <div class="percent" style="--clr:var(--main-color); --num:97;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h3>97<span>%</span></h3>
+                                    <p>Premiere</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="percent" style="--clr:#787cb5; --num:93;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h3>93<span>%</span></h3>
+                                    <p>CorelDRAW</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill-container" data-aos="fade-up-left" data-aos-duration="1000">
-                    <div class="card">
-                        <div class="percent" style="--clr:var(--main-color); --num:97;">
-                            <div class="dot"></div>
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
-                            </svg>
-                            <div class="number">
-                                <h3>97<span>%</span></h3>
-                                <p>Premiere</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="percent" style="--clr:#787cb5; --num:93;">
-                            <div class="dot"></div>
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70" class="colored-circle"></circle>
-                            </svg>
-                            <div class="number">
-                                <h3>93<span>%</span></h3>
-                                <p>CorelDRAW</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </section>
             </div>
         </div>
     </section>
 
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <h2 class="text-header">PORTFOLIO</h2>
         <div class="wrapper">
             <div class="card-set">
                 <div class="container">
                     <input type="radio" name="slide1" id="c1" checked>
-                    <label for="c1" class="card">
+                    <label for="c1" class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
+                        <video class="slide-video" autoplay loop muted>
+                            <source src="img/chococharm1.mp4" type="video/mp4">
+                        </video>
                         <div class="row">
                             <div class="icon">1</div>
                             <div class="description">
                                 <h4>Chococharm</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </label>
                     <input type="radio" name="slide1" id="c2">
-                    <label for="c2" class="card">
+                    <label for="c2" class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                         <div class="row">
                             <div class="icon">2</div>
                             <div class="description">
                                 <h4>Chococharm</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </label>
                     <input type="radio" name="slide1" id="c3">
-                    <label for="c3" class="card">
+                    <label for="c3" class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
                         <div class="row">
                             <div class="icon">3</div>
                             <div class="description">
                                 <h4>Chococharm</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </label>
@@ -224,67 +246,48 @@
             </div>
             <div class="card-set">
                 <div class="container">
-                    <input type="radio" name="slide2" id="c4" checked>
-                    <label for="c4" class="card">
+                    <input type="radio" name="slide5" id="c13" checked>
+                    <label for="c13" class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
+                        <video class="slide-video" autoplay loop muted>
+                            <source src="img/tesla.mp4" type="video/mp4">
+                        </video>
                         <div class="row">
                             <div class="icon">1</div>
                             <div class="description">
-                                <h4>Chococharm</h4>
+                                <h4>Tesla</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </label>
-                    <input type="radio" name="slide2" id="c5">
-                    <label for="c5" class="card">
+                    <input type="radio" name="slide5" id="c14">
+                    <label for="c14" class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                         <div class="row">
                             <div class="icon">2</div>
                             <div class="description">
-                                <h4>Chococharm</h4>
+                                <h4>Tesla</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </label>
-                    <input type="radio" name="slide2" id="c6">
-                    <label for="c6" class="card">
+                    <input type="radio" name="slide5" id="c15">
+                    <label for="c15" class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                         <div class="row">
                             <div class="icon">3</div>
                             <div class="description">
-                                <h4>Chococharm</h4>
+                                <h4>Tesla</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </label>
-                </div>
-            </div>
-            <div class="card-set">
-                <div class="container">
-                    <input type="radio" name="slide3" id="c7" checked>
-                    <label for="c7" class="card">
-                        <div class="row">
-                            <div class="icon">1</div>
-                            <div class="description">
-                                <h4>Chococharm</h4>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="radio" name="slide3" id="c8">
-                    <label for="c8" class="card">
-                        <div class="row">
-                            <div class="icon">2</div>
-                            <div class="description">
-                                <h4>Chococharm</h4>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="radio" name="slide3" id="c9">
-                    <label for="c9" class="card">
-                        <div class="row">
-                            <div class="icon">3</div>
-                            <div class="description">
-                                <h4>Chococharm</h4>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </label>
@@ -293,35 +296,96 @@
             <div class="card-set">
                 <div class="container">
                     <input type="radio" name="slide4" id="c10" checked>
-                    <label for="c10" class="card">
+                    <label for="c10" class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
                         <video class="slide-video" autoplay loop muted>
                             <source src="img/future1.mp4" type="video/mp4">
                         </video>
                         <div class="row">
                             <div class="icon">1</div>
                             <div class="description">
-                                <h4>Chococharm</h4>
+                                <h4>Future Gaming</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </label>
                     <input type="radio" name="slide4" id="c11">
-                    <label for="c11" class="card">
+                    <label for="c11" class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                         <div class="row">
                             <div class="icon">2</div>
                             <div class="description">
-                                <h4>Chococharm</h4>
+                                <h4>Future Gaming</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </label>
                     <input type="radio" name="slide4" id="c12">
-                    <label for="c12" class="card">
+                    <label for="c12" class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
                         <div class="row">
                             <div class="icon">3</div>
                             <div class="description">
-                                <h4>Chococharm</h4>
+                                <h4>Future Gaming</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="card-set">
+                <div class="container">
+                    <input type="radio" name="slide3" id="c7" checked>
+                    <label for="c7" class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
+                        <video class="slide-video" autoplay loop muted>
+                            <source src="img/boxers.mp4" type="video/mp4">
+                        </video>
+                        <div class="row">
+                            <div class="icon">1</div>
+                            <div class="description">
+                                <h4>Boxeri.md</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide3" id="c8">
+                    <label for="c8" class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="row">
+                            <div class="icon">2</div>
+                            <div class="description">
+                                <h4>Boxeri.md</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide3" id="c9">
+                    <label for="c9" class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                        <div class="row">
+                            <div class="icon">3</div>
+                            <div class="description">
+                                <h4>Boxeri.md</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="icons">
+                                    <a href="https://yourwebsite.com" target="_blank" title="Visit Website"><i class="fas fa-globe"></i></a>
+                                    <a href="https://github.com/yourusername/yourproject" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </label>
@@ -329,17 +393,14 @@
             </div>
         </div>
     </section>
-    
-    
-    
 
+    <!-- Contact Section -->
     <section id="contact">
-
         <div class="container">
-            <div class="left">
+            <div class="left" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
                 <div class="form-wrapper">
                     <div class="contact-heading">
-                        <h1>Let's work together<span>.</span></h1>
+                        <h1>Let's <span class="text-header-contact">work</span> together<span>.</span></h1>
                         <p class="text">Or reach me via : <a href="mailto:den.stobert1@gmail.com">den.stobert1@gmail.com</a></p>
                     </div>
                     <form action="index.html" method="post" class="contact-form">
@@ -348,25 +409,21 @@
                             <label>First Name</label>
                             <i class="icon fa-solid fa-address-card"></i>
                         </div>
-
                         <div class="input-wrap">
                             <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>
                             <label>Last Name</label>
                             <i class="icon fa-solid fa-address-card"></i>
                         </div>
-
                         <div class="input-wrap w-100">
                             <input class="contact-input" autocomplete="off" name="Email" type="email" required>
                             <label>Email</label>
                             <i class="icon fa-solid fa-envelope"></i>
                         </div>
-
                         <div class="input-wrap textarea w-100">
                             <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
                             <label>Message</label>
                             <i class="icon fa-solid fa-inbox"></i>
                         </div>
-
                         <div class="contact-buttons w-100">
                             <button class="btn upload">
                                 <span>
@@ -379,7 +436,7 @@
                     </form>
                 </div>
             </div>
-            <div class="right">
+            <div class="right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
                 <div class="image-wrapper">
                     <img src="img/img.jpeg" class="img">
                     <div class="wave-wrap">
@@ -391,14 +448,16 @@
                         </svg>
                     </div>
                 </div>
-                
-                
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 <span>Denis Stobert</span></p>
     </footer>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="./javascript.js"></script>
     <script>

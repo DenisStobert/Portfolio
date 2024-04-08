@@ -24,20 +24,22 @@ gsap.fromTo('.loading-page', {opacity: 1}, {
         enableScroll(); // Re-enable scrolling
     }
 });
+
 const inputs = document.querySelectorAll('.contact-input');
 
-inputs.forEach((ipt) => {
-    ipt.addEventListener('focus', () => {
-        ipt.parentNode.classList.add('focus');
-        ipt.parentNode.classList.add('not-empty');
+inputs.forEach((input) => {
+    input.addEventListener('focus', () => {
+        input.parentNode.classList.add('focus');
+        input.parentNode.classList.add('not-empty');
     });
-    ipt.addEventListener('blur', () => {
-        if(ipt.value == ""){
-            ipt.parentNode.classList.remove('not-empty');
+    input.addEventListener('blur', () => {
+        if (input.value === "") {
+            input.parentNode.classList.remove('not-empty');
         }
-        ipt.parentNode.classList.remove('focus');
+        input.parentNode.classList.remove('focus');
     });
 });
+
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
@@ -54,7 +56,6 @@ function animateText(target) {
                 if (index < iteration) {
                     return target.dataset.value[index];
                 }
-
                 return letters[Math.floor(Math.random() * 26)];
             })
             .join("");
@@ -76,6 +77,7 @@ animateText(h1Element);
 h1Element.onmouseover = () => {
     animateText(h1Element);
 };
+
 window.addEventListener('scroll', function() {
     var header = document.getElementById('main-header');
     var homeSection = document.getElementById('shooting-stars');
@@ -93,13 +95,44 @@ window.addEventListener('scroll', function() {
     // Update active navigation link based on scroll position
     navLinks.forEach(function(link) {
         var section = document.querySelector(link.getAttribute('href'));
-        if (section.offsetTop <= window.scrollY && section.offsetTop + section.offsetHeight > window.scrollY) {
+        var sectionTop = section.getBoundingClientRect().top + window.scrollY - header.offsetHeight;
+
+        // Add an offset to the scroll position for the "About" section
+        var offset = section.id === 'about' ? 100 : 0; // Adjust the offset value as needed
+
+        if (window.scrollY + offset >= sectionTop && window.scrollY < sectionTop + section.offsetHeight) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
         }
     });
 });
+
+document.querySelector('.show-more').addEventListener('click', function() {
+    const hiddenIcons = document.querySelectorAll('.skill-icons i:nth-child(n+4)');
+    const showMoreText = this;
+
+    if (showMoreText.textContent === 'Show More') {
+        // Show the hidden icons with fade-in animation
+        hiddenIcons.forEach(icon => {
+            icon.style.display = 'inline-block';
+            icon.style.opacity = '0';
+            setTimeout(() => {
+                icon.style.transition = 'opacity 0.5s';
+                icon.style.opacity = '1';
+            }, 100);
+        });
+        showMoreText.textContent = 'Show Less'; // Update the text
+    } else {
+        // Hide the icons instantly
+        hiddenIcons.forEach(icon => {
+            icon.style.opacity = '0';
+            icon.style.display = 'none'; // Hide icons immediately
+        });
+        showMoreText.textContent = 'Show More'; // Update the text instantly
+    }
+});
+
 document.querySelectorAll('.portfolio-item').forEach(item => {
     let currentSlide = 0;
     const slides = item.querySelectorAll('.slide');
@@ -113,6 +146,7 @@ document.querySelectorAll('.portfolio-item').forEach(item => {
 
     setInterval(nextSlide, 3000);
 });
+
 function createShootingStar() {
     const shootingStar = document.createElement('div');
     shootingStar.classList.add('shooting-star');
@@ -156,10 +190,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 var counter = 1;
-setInterval(function(){
+setInterval(function() {
     document.getElementById('radio1' + counter).checked = true;
     counter++;
-    if(counter > 4){
+    if (counter > 4) {
         counter = 1;
     }
 }, 5000);
@@ -184,8 +218,8 @@ function updateSliders(index) {
 
     // Update active class for dots
     [...laptopDots, ...phoneDots].forEach(dot => dot.classList.remove('active'));
-    if(laptopDots[index]) laptopDots[index].classList.add('active');
-    if(phoneDots[index]) phoneDots[index].classList.add('active');
+    if (laptopDots[index]) laptopDots[index].classList.add('active');
+    if (phoneDots[index]) phoneDots[index].classList.add('active');
 
     activeIndex = index;
     restartSliderInterval();
@@ -225,5 +259,5 @@ let toggle = document.querySelector(".toggle");
 let menu = document.querySelector(".menu");
 
 toggle.onclick = () => {
-  menu.classList.toggle("active");
+    menu.classList.toggle("active");
 };

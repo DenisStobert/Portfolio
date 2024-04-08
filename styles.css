@@ -107,6 +107,7 @@ body, html {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/bg.jpeg");
     background-position-x: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 #shooting-stars .stars {
@@ -418,10 +419,46 @@ section {
     transform: translateX(-50%);
     width: 5%;
     height: 5px;
-    background-color: #444649;
+    background-color: var(--main-color);
+}
+#portfolio .text-header::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -13px;
+    transform: translateX(-50%);
+    width: 15%;
+    height: 1px;
+    background-color: #000;
+}
+#contact .text-header-contact{
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+#contact .text-header-contact::after{
+    content: '';
+    position: absolute;
+    left: 40px;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 5px;
+    background-color: var(--main-color);
+}
+#contact .text-header-contact::before{
+    content: '';
+    position: absolute;
+    left: 100px;
+    bottom: 2px;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background-color: #000;
 }
 #about{
     min-height: 100vh;
+    overflow: hidden;
 }
 .about-container{
     width: 100%;
@@ -508,6 +545,48 @@ section {
     line-height: 1.2;
     text-align: justify;
     padding-bottom: 8px;
+}
+.infoSection .skill-icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.infoSection .skill-icons i {
+    font-size: 35px;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.skill-icons i:nth-child(n+4) {
+    display: none;
+}
+.show-more {
+    cursor: pointer;
+    color: #007bff;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    display: inline-block;
+    position: relative;
+    text-decoration: underline;
+}
+.show-more::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #ffd89b, #007bff);
+    transform-origin: bottom right;
+    transition: transform .25s ease-out;
+    transform: scaleX(0);
+}
+.show-more:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.show-more:hover{
+    color: #00448d;
 }
 .infoHeader {
     grid-area: infoHeader;
@@ -738,7 +817,8 @@ section {
 #portfolio {
     padding: 50px 0;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
 }
 .portfolio .wrapper {
     display: grid;
@@ -779,10 +859,13 @@ section {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
-.portfolio .card:hover .description h4,
-.portfolio .card:hover .description p {
+.portfolio .card:hover .description {
     opacity: 1;
+    transform: translateY(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .portfolio .card > .row{
     color: white;
@@ -832,12 +915,29 @@ section {
 .portfolio .card:hover::before {
     background: rgba(0, 0, 0, 0.5);
 }
-.portfolio .description p{
-    padding-top: 5px;
-    color: #b0b0ba;
+.portfolio .description h4 {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    margin-bottom: 0.5rem;
 }
-.portfolio .description h4{
-    text-transform: uppercase;
+
+.portfolio .description p {
+    font-size: 0.9rem; /* Adjust the size as needed */
+}
+.portfolio .description .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.portfolio .description .icons a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem; /* Adjust the size as needed */
+    transition: color 0.3s;
+}
+
+.portfolio .description .icons a:hover {
+    color: var(--main-color);
 }
 .portfolio input{
     display: none;
@@ -892,6 +992,19 @@ section {
 }
 .portfolio .card[for="c12"]{
     background-image: url(img/future3.png);
+}
+.portfolio .card[for="c14"]{
+    background-image: url(img/tesla1.png);
+}
+.portfolio .card[for="c15"]{
+    background-image: url(img/tesla2.png);
+}
+.portfolio .card video {
+    transition: transform 0.3s ease;
+}
+
+.portfolio .card:hover video {
+    transform: scale(1.1);
 }
 .nav-buttons {
     display: flex;
