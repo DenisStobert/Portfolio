@@ -1797,6 +1797,13 @@ footer .wave-footer#wave4{
 
 /* For mobile phones */
 @media (max-width: 768px) {
+    .about-contents .imageSection{
+        width: 100%;
+    }
+    .about-contents .imageSection::after{
+        width: 83%;
+        left: 4%;
+    }
     .portfolio .wrapper {
         grid-template-columns: 1fr; /* Change to 1 column */
     }
