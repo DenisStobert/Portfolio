@@ -494,6 +494,7 @@ section {
     object-fit: cover;
     position: relative;
     z-index: 2;
+    border-radius: 10px;
 }
 .about-contents .imageSection::after{
     position: absolute;
@@ -504,6 +505,7 @@ section {
     top: 150px;
     left: 17px;
     z-index: 1;
+    border-radius: 10px;
 }
 .infoSection h1{
     font-size: 30px;
