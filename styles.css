@@ -1682,6 +1682,13 @@ footer .wave-footer#wave4{
 
 /* For tablets and smaller laptops */
 @media (max-width: 1024px) {
+    .about-contents .imageSection{
+        width: 65%;
+    }
+    .about-contents .imageSection::after{
+        width: 77%;
+        left: 8%;
+    }
     .about-container .about-contents {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -1778,9 +1785,13 @@ footer .wave-footer#wave4{
     .skillSection {
         grid-template-columns: 1fr;
     }
-
-    .skill-container {
-        flex-direction: column;
+    .portfolio .wrapper {
+        grid-template-columns: 1fr; /* Change to 1 column */
+    }
+    .portfolio .card-set {
+        flex-direction: column; /* Stack cards vertically */
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -2002,4 +2013,40 @@ footer .wave-footer#wave4{
     .right{
         display: none;
     }
+    @media (max-width: 414px){
+        .portfolio input:checked + label {
+            width: 70%; /* Adjust the width for smaller screens */
+        }
+
+        .portfolio input:checked + label .description {
+            width: 70%; /* Adjust the width of the description for smaller screens */
+        }
+        .portfolio input:not(:checked) + label {
+            display: none; /* Hide the cards that are not checked */
+        }
+        .social-icons {
+            display: flex;
+        }
+        .left{
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+        .left .contact-heading h1{
+            font-size: 33px;
+        }
+        .left .btn.upload span{
+            font-size: 10px;
+        }
+        .left .contact-buttons .btn{
+            font-size: 10px;
+        }
+        .left .text-header-contact::after,
+        .left .text-header-contact::before{
+            display: none;
+        }
+        .right{
+            display: none;
+        }
+    }
 }
+
