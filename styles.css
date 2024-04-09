@@ -1883,6 +1883,9 @@ footer .wave-footer#wave4{
     }
 }
 @media (max-width: 476px) {
+    .social-icons {
+        display: flex;
+    }
     .portfolio input:checked + label {
         width: 80%; /* Set the width of the checked card to 90% */
         margin: 0 auto 20px; /* Center the card with margin */
