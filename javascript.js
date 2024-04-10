@@ -107,7 +107,40 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+const form = document.querySelector('form');
+const firstName = document.getElementById('firstName');
+const lastName = document.getElementById('lastName');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
 
+function sendEmail(){
+    const bodyMessage = `First Name: ${firstName.value}<br> Last Name: ${lastName.value}<br> Email: ${email.value}<br> Message: ${message.value}`;
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "den.stobert1@gmail.com",
+        Password : "86EFA8B956D966073CAE16FCC9A6C2EAACF1",
+        To : 'den.stobert1@gmail.com',
+        From : "den.stobert1@gmail.com",
+        Subject : "Work Text",
+        Body : bodyMessage
+    }).then(
+      message => {
+        if(message == "OK"){
+            Swal.fire({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "success"
+              });
+        }
+      }
+    );
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    sendEmail();
+})
 document.querySelector('.show-more').addEventListener('click', function() {
     const hiddenIcons = document.querySelectorAll('.skill-icons i:nth-child(n+4)');
     const showMoreText = this;

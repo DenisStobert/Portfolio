@@ -387,24 +387,24 @@
                         <h1>Let's <span class="text-header-contact">work</span> together<span>.</span></h1>
                         <p class="text">Or reach me via : <a href="mailto:den.stobert1@gmail.com">den.stobert1@gmail.com</a></p>
                     </div>
-                    <form action="index.html" method="post" class="contact-form">
+                    <form action="#" class="contact-form">
                         <div class="input-wrap">
-                            <input class="contact-input" autocomplete="off" name="First Name" type="text" required>
+                            <input class="contact-input" autocomplete="off" name="First Name" type="text" id="firstName" required>
                             <label>First Name</label>
                             <i class="icon fa-solid fa-address-card"></i>
                         </div>
                         <div class="input-wrap">
-                            <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>
+                            <input class="contact-input" autocomplete="off" name="Last Name" type="text" id="lastName" required>
                             <label>Last Name</label>
                             <i class="icon fa-solid fa-address-card"></i>
                         </div>
                         <div class="input-wrap w-100">
-                            <input class="contact-input" autocomplete="off" name="Email" type="email" required>
+                            <input class="contact-input" autocomplete="off" name="Email" type="email" id="email" required>
                             <label>Email</label>
                             <i class="icon fa-solid fa-envelope"></i>
                         </div>
                         <div class="input-wrap textarea w-100">
-                            <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
+                            <textarea name="Message" auto-complete="off" class="contact-input" id="message" required></textarea>
                             <label>Message</label>
                             <i class="icon fa-solid fa-inbox"></i>
                         </div>
@@ -460,6 +460,8 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="./javascript.js"></script>
     <script>
