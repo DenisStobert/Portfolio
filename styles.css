@@ -229,6 +229,7 @@ body, html {
     font-size: 24px;
     text-align: center;
     z-index: 100;
+    margin-top: 50px;
 }
 
 .centered-text h1, h2, p {
@@ -863,6 +864,10 @@ section {
 .portfolio .card .description .next-card-arrow,
 .portfolio .card .description .html-text,
 .portfolio .card .description .css-text,
+.portfolio .card .description .js-text,
+.portfolio .card .description .react-text,
+.portfolio .card .description .node-text,
+.portfolio .card .description .seo-text,
 .portfolio .card .description .p-text,
 .portfolio .card .description i {
     opacity: 0;
@@ -891,6 +896,10 @@ section {
 .portfolio .card:hover .description .next-card-arrow,
 .portfolio .card:hover .description .html-text,
 .portfolio .card:hover .description .css-text,
+.portfolio .card .description .js-text,
+.portfolio .card .description .react-text,
+.portfolio .card .description .node-text,
+.portfolio .card .description .seo-text,
 .portfolio .card:hover .description .p-text,
 .portfolio .card:hover .description i{
     opacity: 1;
@@ -1011,12 +1020,34 @@ section {
 .portfolio .description .next-card-arrow:hover {
     color: var(--main-color);
 }
-.portfolio .description .html-text{
-    color: #e34c26;
+.portfolio .description .html-text {
+    color: #e34c26; /* HTML color */
 }
-.portfolio .description .css-text{
-    color: #264de4;
+
+.portfolio .description .css-text {
+    color: #2965f1; /* CSS color */
 }
+
+.portfolio .description .js-text {
+    color: #f7df1e; /* JavaScript color */
+}
+
+.portfolio .description .node-text {
+    color: #8cc84b; /* Node.js color */
+}
+
+.portfolio .description .react-text {
+    color: #61dafb; /* React color */
+}
+
+.portfolio .description .seo-text {
+    color: #0078d4; /* SEO color */
+}
+
+.portfolio .description .payment-text {
+    color: #ff9a8b; /* Payment color */
+}
+
 .portfolio .description .icons {
     display: flex;
     justify-content: center;
@@ -1092,6 +1123,12 @@ section {
 }
 .portfolio .card[for="c15"]{
     background-image: url(img/tesla2.png);
+}
+.portfolio .card[for="c17"]{
+    background-image: url(img/luxflight.PNG);
+}
+.portfolio .card[for="c18"]{
+    background-image: url(img/luxflight2.PNG);
 }
 .portfolio .card video {
     transition: transform 0.3s ease;
